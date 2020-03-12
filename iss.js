@@ -35,6 +35,4 @@ const fetchCoordsByIP = (ip, callback) => {
   });
 };
 
-
-
 module.exports = { fetchMyIP, fetchCoordsByIP};
