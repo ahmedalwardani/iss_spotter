@@ -19,6 +19,8 @@ const nextISSTimesForMyLocation = () => {
         const date = new Date(result.risetime * 1000);
         console.log(`Next pass at ${date} for ${result.duration} seconds!`);
       });
+    }).catch((error) => {
+      console.log("It didn't work: ", error.message);
     });
 };
 
